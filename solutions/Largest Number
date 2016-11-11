@@ -1,0 +1,8 @@
+function largestNumber(n) {
+    var num = 9;
+    var arr = [];
+    for(var i = 0; i < n; i++){
+        arr.push(num);
+    }
+    return Number(arr.join(''));
+}
