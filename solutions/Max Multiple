@@ -1,0 +1,7 @@
+function maxMultiple(divisor, bound) {
+    var answer;
+    for(var i = divisor; i <= bound; i = i+divisor){
+        answer = i;
+    }
+    return answer;
+}
