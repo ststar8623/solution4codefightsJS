@@ -1,0 +1,7 @@
+function addTwoDigits(n) {
+    var arr = n.toString().split('');
+    
+    return arr.reduce(function(a,b){
+        return Number(a) + Number(b);
+    })
+}
