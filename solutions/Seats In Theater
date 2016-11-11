@@ -1,0 +1,6 @@
+function seatsInTheater(nCols, nRows, col, row) {
+    var height = nCols - (col-1);
+    var width = nRows - row;
+    
+    return height * width;
+}
