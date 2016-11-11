@@ -1,0 +1,10 @@
+function circleOfNumbers(n, firstNumber) {
+    var half = n/2;
+    if(half > firstNumber){
+        return firstNumber + half;
+    } else if (half < firstNumber){
+        return firstNumber - half;
+    } else {
+        return firstNumber - half;
+    }
+}
