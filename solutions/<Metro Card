@@ -1,0 +1,11 @@
+function metroCard(lastNumberOfDays) {
+    var test = lastNumberOfDays;
+    if(test === 28){
+        return [31];
+    } else if(test === 30){
+        return [31];
+    } else {
+        return [28, 30, 31];
+    }
+    
+}
