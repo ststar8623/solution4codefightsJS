@@ -1,0 +1,21 @@
+function rangeBitCount(a,b){
+	var arr = [];
+
+	while(a <= b){
+		arr.push(a);
+		a++;
+	}
+	var bitarr = arr.map(function(num){
+		return num.toString(2);
+	})
+
+	var counter = 0;
+	for(var i = 0; i<bitarr.length; i++){
+		for(var j = 0; j<bitarr[i].length; j++){
+			if(bitarr[i][j] === '1'){
+				counter++;
+			}
+		}
+	}
+	return counter;
+}
