@@ -1,0 +1,8 @@
+function createArray(size) {
+    var arr = [];
+    for(var i=1; i<=size; i++){
+        var one = 1;
+        arr.push(one);
+    }
+    return arr;
+}
