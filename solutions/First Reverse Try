@@ -1,0 +1,16 @@
+function firstReverseTry(arr) {
+    if(arr.length === 0){
+        return [];
+    } else if(arr.length === 1){
+        return arr;
+    }
+    var first = [arr[0]];
+    var last = [arr[arr.length-1]];
+    
+    arr.shift();
+    arr.pop();
+    
+    var output = last.concat(arr);
+    return output.concat(first);
+}
+
