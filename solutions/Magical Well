@@ -1,0 +1,15 @@
+function magicalWell(a, b, n) {
+    var output = 0;
+    var aa = a;
+    var bb = b;
+    var counter = 1;
+    while(counter <= n){
+        output += aa * bb;
+        aa++;
+        bb++;
+        counter++;
+    }
+    
+    return output;
+    
+}
