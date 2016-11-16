@@ -1,0 +1,13 @@
+function appleBoxes(k) {
+    var red = 0;
+    var yellow = 0;
+    
+    for(var i = 1; i <= k; i++){
+        if(i%2 !== 0){
+            yellow += i*i;
+        } else {
+            red += i*i;
+        }
+    }
+    return red - yellow;
+}
