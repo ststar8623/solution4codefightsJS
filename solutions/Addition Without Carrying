@@ -1,0 +1,33 @@
+function additionWithoutCarrying(param1, param2) {
+    
+    var arr1 = param1.toString().split('');
+    var arr2 = param2.toString().split('');
+    
+    var plength = arr1.length - arr2.length;
+    
+    if(plength > 0){
+        while(plength > 0){
+            arr2.unshift('0');
+            plength--;
+        }
+    } else if(plength < 0){
+        while(plength < 0){
+            arr1.unshift('0');
+            plength++;
+        }
+    }
+    
+    var counter = [];
+    
+    for(var i = 0; i < arr1.length; i++){
+        var sum = Number(arr1[i]) + Number(arr2[i]);
+        if(sum >= 10){
+            counter.push(sum-10);
+        } else {
+            counter.push(sum);
+        }
+        
+    }
+    return Number(counter.join(''));
+    
+}
