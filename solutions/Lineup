@@ -1,0 +1,32 @@
+function lineUp(commands){
+    
+    var counter = 0;
+    var direction = true;
+    for(var i = 0; i < commands.length; i++){
+        if(commands[i] == 'L'){
+            if(direction === true){
+                direction = false;
+            } else {
+                counter += 1;
+                direction = true;
+            }
+        }
+        if(commands[i] == "R"){
+            if(direction === true){
+                direction = false;
+            } else {
+                counter += 1;
+                direction = true;
+            }
+        }
+        if(commands[i] == "A"){
+            if(direction === true){
+                counter += 1;
+            } else {
+                direction = false;
+            }
+        }
+        console.log(direction);
+    }
+    return counter;
+}
